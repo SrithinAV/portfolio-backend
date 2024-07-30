@@ -17,7 +17,7 @@ app.get("/",(req,res)=>
 app.use("/contact", contactRouter);
 app.use("/gemini", indexRouter);
 
-app.listen(port,()=>
+app.listen(port,'0.0.0.0',()=>
 {
     console.log(`server started on port  ${port}`)
 })
